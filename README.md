@@ -1,5 +1,6 @@
 ## Synopsis
 List of ISO country codes, with their 2-character, 3 character and numeric code. Includes English country name, demonym and adjective.
+Based on the official list published by ISO here https://www.iso.org/obp/ui/#iso:pub:PUB500001:en
 
 ## Code Example
 Add reference to namespace ``ExtendedIsoCountries``.
