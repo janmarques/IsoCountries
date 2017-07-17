@@ -49,6 +49,29 @@ namespace ExtendedIsoCountries
         /// </summary>
         public bool HasAdjective => !string.IsNullOrEmpty(Adjective);
 
+        public static Country GetBy2CharacterCode(string code)
+        {
+            if (code == null || code.Length != 2)
+            {
+                throw new ArgumentException($"Code '{code}' should be 2 characters long");
+            }
+            return Countries.Find(x => x.Alpha2Code == code);
+        }
+
+        public static Country GetBy3CharacterCode(string code)
+        {
+            if (code == null || code.Length != 3)
+            {
+                throw new ArgumentException($"Code '{code}' should be 3 characters long");
+            }
+            return Countries.Find(x => x.Alpha3Code == code);
+        }
+
+        public static Country GetByNumericCode(int code)
+        {
+            return Countries.Find(x => x.NumericCode == code);
+        }
+
         public static List<Country> Countries = new List<Country>()
         {
             new Country("Afghanistan", "AF", "AFG",4, "Afghani", "Afghani"),
@@ -180,7 +203,7 @@ namespace ExtendedIsoCountries
             new Country("Libya", "LY", "LBY",434, "Libyan", "Libyan"),
             new Country("Liechtenstein", "LI", "LIE",438, "Liechtensteiner", "Liechtensteiner"),
             new Country("Lithuania", "LT", "LTU",440, "Lithunian", "Lithunian"),
-            new Country("Luxembourg", "LU", "LUX",442, "Luxembourger", "Luxembourger"),
+            new Country("Luxembourg", "LU", "LUX",442, "Luxembourg", "Luxembourger"),
             new Country("Macao", "MO", "MAC",446, "Macanese", "Macanese"),
             new Country("Macedonia (the former Yugoslav Republic of)", "MK", "MKD",807, "Macedonian", "Macedonian"),
             new Country("Madagascar", "MG", "MDG",450, "Malagasy", "Malagasy"),
@@ -209,7 +232,7 @@ namespace ExtendedIsoCountries
             new Country("Nepal", "NP", "NPL",524, "Nepalese", "Nepalese"),
             new Country("Netherlands (the)", "NL", "NLD",528, "Dutch", "Dutch"),
             new Country("New Caledonia", "NC", "NCL",540, "New Caledonian", "New Caledonian"),
-            new Country("New Zealand", "NZ", "NZL",554, "New Zealander", "New Zealander"),
+            new Country("New Zealand", "NZ", "NZL",554, "New Zealand", "New Zealander"),
             new Country("Nicaragua", "NI", "NIC",558, "Nicaraguan", "Nicaraguan"),
             new Country("Niger (the)", "NE", "NER",562, "Nigerien", "Nigerien"),
             new Country("Nigeria", "NG", "NGA",566, "Nigerian", "Nigerian"),
@@ -262,7 +285,7 @@ namespace ExtendedIsoCountries
             new Country("Spain", "ES", "ESP",724, "Spanish", "Spaniard"),
             new Country("Sri Lanka", "LK", "LKA",144, "Sri Lankan", "Sri Lankan"),
             new Country("Sudan (the)", "SD", "SDN",729, "Sudanese", "Sudanese"),
-            new Country("Suriname", "SR", "SUR",740, "Surinamer", "Surinamer"),
+            new Country("Suriname", "SR", "SUR",740, "Suriname", "Surinamer"),
             new Country("Svalbard and Jan Mayen", "SJ", "SJM",744, null, null),
             new Country("Swaziland", "SZ", "SWZ",748, "Swazi", "Swazi"),
             new Country("Sweden", "SE", "SWE",752, "Swedish", "Swede"),
@@ -301,28 +324,5 @@ namespace ExtendedIsoCountries
             new Country("Zambia", "ZM", "ZMB",894, "Zambian", "Zambian"),
             new Country("Zimbabwe", "ZW", "ZWE",716, "Zimbabwean", "Zimbabwean"),
         };
-
-        public static Country GetBy2CharacterCode(string code)
-        {
-            if (code == null || code.Length != 2)
-            {
-                throw new ArgumentException($"Code '{code}' should be 2 characters long");
-            }
-            return Countries.Find(x => x.Alpha2Code == code);
-        }
-
-        public static Country GetBy3CharacterCode(string code)
-        {
-            if (code == null || code.Length != 3)
-            {
-                throw new ArgumentException($"Code '{code}' should be 3 characters long");
-            }
-            return Countries.Find(x => x.Alpha3Code == code);
-        }
-
-        public static Country GetByNumericCode(int code)
-        {
-            return Countries.Find(x => x.NumericCode == code);
-        }
     }
 }
