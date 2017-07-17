@@ -9,7 +9,7 @@ Get all countries via ``Country.Countries``, or search through them via:
 * ``Country.GetBy3CharacterCode()``
 * ``Country.GetByNumericCode()``
 
-``
+```cs
 using Xunit;
 using ExtendedIsoCountries;
 
@@ -32,7 +32,7 @@ namespace CountryTests
         }
     }
 }
-``
+```
 
 ## Motivation
 No nuget package of countries with respective demonyms and adjectives existed so far. 
