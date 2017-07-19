@@ -8,7 +8,4 @@
     <projectUrl>https://github.com/janmarques/IsoCountries</projectUrl>
     <tags>iso country demonym adjective alpha2 alpha3</tags>
   </metadata>
-  <files>
-    <file src="bin\Release\ExtendedIsoCountries.dll" target="lib/" />
-  </files>
 </package>
