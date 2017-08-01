@@ -1,3 +1,7 @@
+## Installation
+Install via nuget, the package is named ``ExtendedIsoCountries``.
+https://www.nuget.org/packages/ExtendedIsoCountries/
+
 ## Synopsis
 List of ISO country codes, with their 2-character, 3 character and numeric code. Includes English country name, demonym and adjective.
 Based on the official list published by ISO here https://www.iso.org/obp/ui/#iso:pub:PUB500001:en
@@ -37,6 +41,3 @@ namespace CountryTests
 
 ## Motivation
 No nuget package of countries with respective demonyms and adjectives existed so far. 
-
-## Installation
-Install via nuget, the package is named ``ExtendedIsoCountries``. Currently prerelease
