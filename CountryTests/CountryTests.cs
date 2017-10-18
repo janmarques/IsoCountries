@@ -6,7 +6,7 @@ namespace CountryTests
     public class CountryTests
     {
         [Fact]
-        public void AllCountriesPresent() => Assert.Equal(249, Country.Countries.Count);
+        public void AllCountriesPresent() => Assert.True(Country.Countries.Count >= 249);
 
         [Fact]
         public void AllHaveAlpha2Code() => Assert.True(Country.Countries.All(x => !string.IsNullOrEmpty(x.Alpha2Code)));
