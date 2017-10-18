@@ -9,14 +9,14 @@ namespace CountryTests
         public void ReadmeExample_Spain()
         {
             var country = Country.GetBy2CharacterCode("ES");
-            Assert.Equal(country.Alpha2Code, "ES");
-            Assert.Equal(country.Alpha3Code, "ESP");
-            Assert.Equal(country.NumericCode, 724);
-            Assert.Equal(country.Name, "Spain");
-            Assert.Equal(country.Adjective, "Spanish"); // (a Spanish beer)
-            Assert.Equal(country.Demonym, "Spaniard"); // (a Spaniard living in Barcelona)
-            Assert.Equal(country.HasAdjective, true);
-            Assert.Equal(country.HasDemonym, true);
+            Assert.Equal("ES", country.Alpha2Code);
+            Assert.Equal("ESP", country.Alpha3Code);
+            Assert.Equal(724, country.NumericCode);
+            Assert.Equal("Spain", country.Name);
+            Assert.Equal("Spanish", country.Adjective); // (a Spanish beer)
+            Assert.Equal("Spaniard", country.Demonym); // (a Spaniard living in Barcelona)
+            Assert.True(country.HasAdjective);
+            Assert.True(country.HasDemonym);
         }
     }
 }
