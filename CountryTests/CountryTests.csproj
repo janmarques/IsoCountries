@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CountryExtensibilityTests.cs" />
+    <Compile Include="ReadmeSample.cs" />
     <Compile Include="CountryTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

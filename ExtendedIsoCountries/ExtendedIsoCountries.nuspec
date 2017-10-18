@@ -1,9 +1,11 @@
 ﻿<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>ExtendedIsoCountries</id>
-    <version>0.0.1-alpha1</version>
+    <title>Extended Iso Countries</title>
+    <version>1.0.0</version>
     <authors>Jan Marques</authors>
     <description>List of ISO country codes, with their 2-character, 3 character and numeric code. Includes English country name, demonym and adjective.</description>
-    <projectUrl>https://github.com/janmarques/ExtendedIsoCountries</projectUrl>
+    <projectUrl>https://github.com/janmarques/IsoCountries</projectUrl>
+    <tags>iso country demonym adjective alpha2 alpha3</tags>
   </metadata>
 </package>
