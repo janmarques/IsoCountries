@@ -1,1 +1,1 @@
-nuget pack ExtendedIsoCountries\ExtendedIsoCountries.csproj -Build -Properties Configuration=Release
+nuget pack IsoCountriesStandard\IsoCountriesStandard.csproj -Build -Properties Configuration=Release

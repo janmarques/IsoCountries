@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>ExtendedIsoCountries</PackageId>
+    <Authors>Jan Marques</Authors>
+    <Company></Company>
+    <Product>Extended Iso Countries</Product>
+    <Description>List of ISO country codes, with their 2-character, 3 character and numeric code. Includes English country name, demonym and adjective.</Description>
+    <PackageProjectUrl>https://github.com/janmarques/IsoCountries</PackageProjectUrl>
+    <PackageReleaseNotes>iso country demonym adjective alpha2 alpha3</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.2</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\PublishProfiles\" />
+  </ItemGroup>
+
+</Project>

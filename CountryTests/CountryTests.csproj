@@ -71,13 +71,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ExtendedIsoCountries\ExtendedIsoCountries.csproj">
-      <Project>{0f13148c-be7d-4fee-bd1f-866166962eae}</Project>
-      <Name>ExtendedIsoCountries</Name>
-    </ProjectReference>
+    <Analyzer Include="..\packages\xunit.analyzers.0.7.0\analyzers\dotnet\cs\xunit.analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Analyzer Include="..\packages\xunit.analyzers.0.7.0\analyzers\dotnet\cs\xunit.analyzers.dll" />
+    <ProjectReference Include="..\IsoCountriesStandard\IsoCountriesStandard.csproj">
+      <Project>{86e58a65-3aa5-4c29-8c84-115fb866be63}</Project>
+      <Name>IsoCountriesStandard</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
